@@ -1,0 +1,27 @@
+name: catalog
+description: "Newsletter content catalog for PM resources"
+version: 1
+created: 2025-11-27
+maintainer:
+  name: "Amy"
+  email: "amycmitchell14@gmail.com"
+
+content_dir: content/
+
+# Default metadata for content items
+default_item:
+  language: en
+  license: CC-BY-4.0
+
+items:
+  - id: pm-urgency-checklist
+    title: "PM Urgency Checklist"
+    filename: "PM urgency checklist.pdf"
+    file: "content/PM urgency checklist.pdf"
+    path: "content/PM urgency checklist.pdf"
+    type: "Quick Start"
+    version: "1.0"
+    description: "Steps to handle sudden priority shifts"
+    tags: ["PM steps", "PM leadership"]
+    access: "paid"
+    status: "current"

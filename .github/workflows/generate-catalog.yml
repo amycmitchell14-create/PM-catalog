@@ -1,0 +1,59 @@
+name: Generate and validate catalog
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Validate & generate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Validate catalog.yml (parse check)
+        run: |
+          python - << 'PY'
+          import yaml, sys
+          try:
+              yaml.safe_load(open('catalog.yml'))
+              print('catalog.yml parsed OK')
+          except Exception as e:
+              print('catalog.yml parse failed:', e)
+              sys.exit(2)
+          PY
+
+      - name: Validate catalog schema (strict)
+        run: |
+          python scripts/validate_catalog.py -c catalog.yml
+
+      - name: Render catalog to markdown
+        run: python scripts/catalog_to_md.py -c catalog.yml -o README-catalog.md
+
+      - name: Commit README-catalog.md if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q README-catalog.md; then
+            git add README-catalog.md
+            git commit -m "chore: regenerate README-catalog.md from catalog.yml"
+            git push
+          else
+            echo "README-catalog.md is up to date"
+          fi
