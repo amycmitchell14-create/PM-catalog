@@ -99,7 +99,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         # Group by access and type
         access_groups = {"free": "🟢 Free Content", "paid": "🔒 Paid Content"}
-        type_groups = {"slide-deck": "🎤 Slide Decks", "learning-guide": "📖 Learning Guides", "quick-start": "📝 Quick Starts"}
+        type_groups = {"slide-deck": "🎤 Slide Decks", "learning-path": "📖 Learning Paths", "quick-start": "📝 Quick Starts"}
 
         for access, access_label in access_groups.items():
             out_lines.append(f"\n## {access_label}\n")

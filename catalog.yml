@@ -19,7 +19,7 @@ items:
     filename: "PM urgency checklist.pdf"
     file: "content/PM urgency checklist.pdf"
     path: "content/PM urgency checklist.pdf"
-    type: "Quick Start"
+    type: quick-start
     version: "1.1"
     description: "Steps to handle sudden priority shifts"
     tags: ["PM steps", "PM leadership"]
@@ -31,8 +31,8 @@ items:
     filename: "Standard Offer Learning Path.pdf"
     file: "content/Standard Offer Learning Path.pdf"
     path: "content/Standard Offer Learning Path.pdf"
-    type: "Learning Path"
-    version: "1.0"
+    type: learning-path
+    version: "1.1"
     description: "Learning path to define and grow your offer"
     tags: ["learning path", "offer definition", "PM leadership"]
     access: "paid"
