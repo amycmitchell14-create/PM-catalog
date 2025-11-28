@@ -69,7 +69,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("-o", "--output", help="Write markdown to this file (stdout if omitted)")
     args = parser.parse_args(argv)
 
-    catalog_path = pathlib.Path(__file__).parents[1] / args.catalog
+    catalog_path = pathlib.Path(args.catalog)
     if not catalog_path.exists():
         print(f"Error: catalog file not found at {catalog_path}", file=sys.stderr)
         return 2
@@ -77,11 +77,50 @@ def main(argv: list[str] | None = None) -> int:
     with catalog_path.open("r", encoding="utf-8") as fh:
         data = yaml.safe_load(fh)
 
-    out_lines = []
-    out_lines.append(f"# {data.get('name', 'Catalog')}")
+    out_lines = [f"# {data.get('name', 'Catalog')}"]
     if data.get("description"):
         out_lines.append("")
         out_lines.append(data["description"])
+
+    maint = data.get("maintainer")
+    if maint:
+        out_lines.append("")
+        mn = maint.get("name") or ""
+        me = maint.get("email")
+        if me:
+            out_lines.append(f"**Maintainer:** {mn} <{me}>")
+        else:
+            out_lines.append(f"**Maintainer:** {mn}")
+
+    items = data.get("items") or []
+    if not items:
+        out_lines.append("\n## Items\n\n*(no items found in catalog.yml)*")
+    else:
+        # Group by access and type
+        access_groups = {"free": "🟢 Free Content", "paid": "🔒 Paid Content"}
+        type_groups = {"slide-deck": "🎤 Slide Decks", "learning-guide": "📖 Learning Guides", "quick-start": "📝 Quick Starts"}
+
+        for access, access_label in access_groups.items():
+            out_lines.append(f"\n## {access_label}\n")
+            for t, t_label in type_groups.items():
+                section_items = [i for i in items if i.get("access") == access and i.get("type") == t]
+                if section_items:
+                    out_lines.append(f"### {t_label}\n")
+                    for item in section_items:
+                        out_lines.append(render_item_md(item))
+
+    md = "\n".join(out_lines)
+
+    # Ensure public folder exists
+    public_dir = pathlib.Path("public")
+    public_dir.mkdir(exist_ok=True)
+
+    # Always write index.md for GitHub Pages
+    index_path = pathlib.Path("index.md")
+    index_path.write_text(md, encoding="utf-8")
+    print(f"Wrote Markdown to {index_path}")
+
+    return 0
 
     # maintainer
     maint = data.get("maintainer")
