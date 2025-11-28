@@ -53,11 +53,12 @@ def render_item_md(item: dict) -> str:
         tags_line = ", ".join(str(t) for t in tags)
         lines.append(f"**Tags:** {tags_line}")
 
-    # file/path link
+    # file/path link as clickable Markdown
     paths = item.get("file") or item.get("path") or item.get("filename")
+    filename = item.get("filename") or "Download"
     if paths:
-        lines.append("")
-        lines.append(f"**File:** `{paths}`")
+      lines.append("")
+      lines.append(f"**File:** [{filename}]({paths})")
 
     lines.append("")
     return "\n".join(lines)
