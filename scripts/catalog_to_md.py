@@ -115,10 +115,10 @@ def main(argv: list[str] | None = None) -> int:
     public_dir = pathlib.Path("public")
     public_dir.mkdir(exist_ok=True)
 
-# Always write index.md for GitHub Pages
-index_path = pathlib.Path("index.md")
-index_path.write_text(md, encoding="utf-8")
-print(f"Wrote Markdown to {index_path}")
+    # Always write index.md for GitHub Pages
+    index_path = pathlib.Path("index.md")
+    index_path.write_text(md, encoding="utf-8")
+    print(f"Wrote Markdown to {index_path}")
 
     return 0
 
