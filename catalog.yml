@@ -23,7 +23,7 @@ items:
     description: "Checklist to optimize your PM resume"
     tags: ["resume", "job search", "PM career"] 
     access: "free"
-    link: file://content/Product%20Manager%20Resume%20Checklist.pdf
+    link: https://amycmitchell14-create.github.io/catalog-paid/content/Product%20Manager%20Resume%20Checklist.pdf
     status: "current"
   - id: pm-urgency-checklist
     title: "PM Urgency Checklist"

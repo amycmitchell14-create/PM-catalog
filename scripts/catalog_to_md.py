@@ -30,10 +30,13 @@ def render_item_md(item):
 
     # Build the link line based on access type
     if item.get("access") == "paid":
+        # Paid items show the external link (Google Drive, etc.)
         lines.append(f"- [{title}]({link}) 🔒")
-    elif item.get("access") == "free":
+    elif item.get("access") == "free" and link:
+        # Free items show their link (GitHub Pages or file://)
         lines.append(f"- [{title}]({link})")
     else:
+        # Fallback if no link
         lines.append(f"- {title}")
 
     # Description
