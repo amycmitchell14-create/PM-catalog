@@ -26,17 +26,18 @@ except Exception:  # pragma: no cover - helpful error if pyyaml isn't installed
 def render_item_md(item):
     title = item.get("title", "Untitled")
     link = item.get("link", "")
-    meta = []
+    lines = []
 
-# Build the link line based on access type
+    # Build the link line based on access type
     if item.get("access") == "paid":
-        line = f"- [{title}]({link}) 🔒"
+        lines.append(f"- [{title}]({link}) 🔒")
     elif item.get("access") == "free":
-        line = f"- [{title}]({link})"
+        lines.append(f"- [{title}]({link})")
     else:
-        line = f"- {title}"
+        lines.append(f"- {title}")
 
-# Collect metadata
+    # Collect metadata
+    meta = []
     if item.get("type"):
         meta.append(f"**Type:** {item['type']}")
     if item.get("version"):
@@ -46,12 +47,22 @@ def render_item_md(item):
     if item.get("access"):
         meta.append(f"**Access:** {item['access']}")
 
-    # Return combined output
     if meta:
-        return f"{line} ({', '.join(meta)})"
-    else:
-        return line
+        lines.append("  " + ", ".join(meta))
 
+    # Tags
+    tags = item.get("tags")
+    if isinstance(tags, (list, tuple)) and tags:
+        tags_line = ", ".join(str(t) for t in tags)
+        lines.append(f"  **Tags:** {tags_line}")
+
+    # File/path link
+    paths = item.get("file") or item.get("path") or item.get("filename")
+    filename = item.get("filename") or "Download"
+    if paths:
+        lines.append(f"  **File:** [{filename}]({paths})")
+
+    return "\n".join(lines)
 
     # tags
     tags = item.get("tags")
