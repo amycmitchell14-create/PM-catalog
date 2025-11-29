@@ -35,13 +35,7 @@ def render_item_md(item):
         return f"- [{title}]({link})"
     else:
         return f"- {title}"
-    
-def render_item_md(item: dict) -> str:
-    lines = []
-    title = item.get("title") or item.get("filename") or item.get("id")
-    lines.append(f"### {title}")
 
-    meta = []
     if item.get("type"):
         meta.append(f"**Type:** {item['type']}")
     if item.get("version"):
