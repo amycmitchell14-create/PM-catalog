@@ -8,7 +8,7 @@ Newsletter content catalog for PM resources
 
 ### 📝 Quick Starts
 
-- [Product Manager Resume Checklist](file://content/Product%20Manager%20Resume%20Checklist.pdf)
+- [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/catalog-paid/content/Product%20Manager%20Resume%20Checklist.pdf)
   *Checklist to optimize your PM resume*
   **Type:** quick-start, **Version:** 1.0, **Status:** current, **Access:** free
   **Tags:** resume, job search, PM career
