@@ -24,6 +24,7 @@ items:
     tags: ["resume", "job search", "PM career"]
     access: "free"
     status: "current"
+    
   - id: pm-urgency-checklist
     title: "PM Urgency Checklist"
     filename: "PM urgency checklist.pdf"
