@@ -26,16 +26,17 @@ except Exception:  # pragma: no cover - helpful error if pyyaml isn't installed
 def render_item_md(item):
     title = item.get("title", "Untitled")
     link = item.get("link", "")
+    meta = []
 
+# Build the link line based on access type
     if item.get("access") == "free":
-        # Assume link is a GitHub Pages URL
-        return f"- [{title}]({link})"
+        line = f"- [{title}]({link})"
     elif item.get("access") == "paid":
-        # Assume link is a Google Drive URL
-        return f"- [{title}]({link})"
+        line = f"- [{title}]({link})"
     else:
-        return f"- {title}"
+        line = f"- {title}"
 
+# Collect metadata
     if item.get("type"):
         meta.append(f"**Type:** {item['type']}")
     if item.get("version"):
@@ -45,12 +46,12 @@ def render_item_md(item):
     if item.get("access"):
         meta.append(f"**Access:** {item['access']}")
 
+    # Return combined output
     if meta:
-        lines.append(" | ".join(meta))
+        return f"{line} ({', '.join(meta)})"
+    else:
+        return line
 
-    if item.get("description"):
-        lines.append("")
-        lines.append(item["description"])
 
     # tags
     tags = item.get("tags")
