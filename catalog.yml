@@ -40,9 +40,9 @@ items:
 
   - id: standard-offers-learning-path
     title: "Standard Offer Learning Path"
-    filename: "Standard Offer Learning Path.pdf"
-    file: "content/std offers paid.pdf"
-    path: "content/std offers paid.pdf"
+    filename: "paid subscribers only"
+    file: "not available"
+    path: "not available"
     type: learning-path
     version: "1.1"
     description: "Learning path to define and grow your offer"
