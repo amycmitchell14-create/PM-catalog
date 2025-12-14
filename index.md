@@ -18,7 +18,7 @@ Newsletter content catalog for PM resources
 
 ### 📖 Learning Paths
 
-- [Standard Offer Learning Path](https://docs.google.com/presentation/d/1zJiGPHgLwH3fUSWkZKuEqwrpkvDajGc-/edit?usp=sharing&ouid=116789714044030816234&rtpof=true&sd=true) 🔒
+- [Standard Offer Learning Path](https://amycmitchell.substack.com/p/premium-pm-resources) 🔒
   *Learning path to define and grow your offer*
   **Type:** learning-path, **Version:** 1.1, **Status:** current, **Access:** paid
   **Tags:** learning path, offer definition, PM leadership
