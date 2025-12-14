@@ -24,6 +24,8 @@ items:
     tags: ["resume", "job search", "PM career"]
     access: "free"
     status: "current"
+    cta: "💡 Want more? Subscribe on Substack for exclusive playbooks and guides: https://amycmitchell.substack.com/"
+
     
   - id: pm-urgency-checklist
     title: "PM Urgency Checklist"
