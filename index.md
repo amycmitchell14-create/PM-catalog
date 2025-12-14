@@ -13,6 +13,11 @@ Newsletter content catalog for PM resources
   **Type:** quick-start, **Version:** 1.0, **Status:** current, **Access:** free
   **Tags:** resume, job search, PM career
   **File:** [Product Manager Resume Checklist.pdf](content/Product Manager Resume Checklist.pdf)
+- [PM Urgency Checklist](https://amycmitchell14-create.github.io/catalog-paid/content/PM%20urgency%20checklist.pdf)
+  *Steps to handle sudden priority shifts*
+  **Type:** quick-start, **Version:** 1.1, **Status:** current, **Access:** free
+  **Tags:** PM steps, PM leadership
+  **File:** [PM urgency checklist.pdf](content/PM urgency checklist.pdf)
 
 ## 🔒 Paid Content
 
@@ -23,10 +28,3 @@ Newsletter content catalog for PM resources
   **Type:** learning-path, **Version:** 1.1, **Status:** current, **Access:** paid
   **Tags:** learning path, offer definition, PM leadership
   **File:** [paid subscribers only](not available)
-### 📝 Quick Starts
-
-- [PM Urgency Checklist](https://drive.google.com/file/d/1yHAPBUZls1C-thOuwfKyKXdcrF2NTuKe/view?usp=sharing) 🔒
-  *Steps to handle sudden priority shifts*
-  **Type:** quick-start, **Version:** 1.1, **Status:** current, **Access:** paid
-  **Tags:** PM steps, PM leadership
-  **File:** [PM urgency checklist.pdf](content/PM urgency checklist.pdf)
