@@ -22,7 +22,7 @@ Newsletter content catalog for PM resources
   *Learning path to define and grow your offer*
   **Type:** learning-path, **Version:** 1.1, **Status:** current, **Access:** paid
   **Tags:** learning path, offer definition, PM leadership
-  **File:** [Standard Offer Learning Path.pdf](content/std offers paid.pdf)
+  **File:** [paid subscribers only](not available)
 ### 📝 Quick Starts
 
 - [PM Urgency Checklist](https://drive.google.com/file/d/1yHAPBUZls1C-thOuwfKyKXdcrF2NTuKe/view?usp=sharing) 🔒
