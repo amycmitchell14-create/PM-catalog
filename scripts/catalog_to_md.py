@@ -78,11 +78,6 @@ def render_item_md(item):
         tags_line = ", ".join(str(t) for t in tags)
         lines.append(f"**Tags:** {tags_line}")
 
-    # Add CTA if present
-    if 'cta' in item and item['cta']:
-        lines.append(f"\n{item['cta']}")
-    lines.append("")  # blank line between entries
-
     # file/path link as clickable Markdown
     paths = item.get("file") or item.get("path") or item.get("filename")
     filename = item.get("filename") or "Download"
