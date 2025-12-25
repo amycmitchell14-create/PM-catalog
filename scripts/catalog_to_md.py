@@ -17,6 +17,15 @@ import argparse
 import pathlib
 import sys
 
+import yaml
+
+# Load catalog.yml into 'data'
+with open("catalog.yml", "r", encoding="utf-8") as f:
+    data = yaml.safe_load(f)
+
+# Initialize the output list
+out_lines = []
+
 try:
     import yaml
 except Exception:  # pragma: no cover - helpful error if pyyaml isn't installed
@@ -146,31 +155,36 @@ def main(argv: list[str] | None = None) -> int:
     index_path.write_text(md, encoding="utf-8")
     print(f"Wrote Markdown to {index_path}")
 
-    return 0
+import yaml
+
+with open("catalog.yml", "r", encoding="utf-8") as f:
+    catalog = yaml.safe_load(f)
+
+lines = []
 
 # adding FAQ and info
-    for item in catalog:
-        lines.append(f"### 📄 {item['title']}")
-        lines.append(f"*{item['description']}*")
-        lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
+for item in catalog:
+    lines.append(f"### 📄 {item['title']}")
+    lines.append(f"*{item['description']}*")
+    lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
                  f"**Status:** {item['status']}, **Access:** {item['access']}")
-        if 'tags' in item:
-         lines.append(f"**Tags:** {', '.join(item['tags'])}")
-        if 'link' in item:
+    if 'tags' in item:
+        lines.append(f"**Tags:** {', '.join(item['tags'])}")
+    if 'link' in item:
         # If link points to faq.md, render as internal page link
-            if item['link'].endswith("faq.md"):
-                lines.append(f"🔗 [Read FAQ]({item['link']})")
+        if item['link'].endswith("faq.md"):
+            lines.append(f"🔗 [Read FAQ]({item['link']})")
         else:
             lines.append(f"📄 [Download PDF]({item['link']})")
-        if 'cta' in item and item['cta']:
-         lines.append(f"\n{item['cta']}")
-         lines.append("")  # blank line between entries
-    return 0
+    if 'cta' in item and item['cta']:
+        lines.append(f"\n{item['cta']}")
+    lines.append("")  # blank line between entries
 
 
-    # maintainer
-    maint = data.get("maintainer")
-    if maint:
+# maintainer
+
+maint = data.get("maintainer")
+if maint:
         out_lines.append("")
         mn = maint.get("name") or ""
         me = maint.get("email")
@@ -179,27 +193,23 @@ def main(argv: list[str] | None = None) -> int:
         else:
             out_lines.append(f"**Maintainer:** {mn}")
 
-    out_lines.append("")
-    out_lines.append("## Items")
-    out_lines.append("")
+out_lines.append("")
+out_lines.append("## Items")
+out_lines.append("")
 
-    items = data.get("items") or []
-    if not items:
-        out_lines.append("*(no items found in catalog.yml)*")
+items = data.get("items") or []
+if not items:
+    out_lines.append("*(no items found in catalog.yml)*")
 
-    for item in items:
-        out_lines.append(render_item_md(item))
+for item in items:
+    out_lines.append(render_item_md(item))
+    
+# finally write out to index.md
+md = "\n".join(out_lines)
+with open("index.md", "w", encoding="utf-8") as f:
+    f.write("\n".join(lines))
 
-    md = "\n".join(out_lines)
 
-    if args.output:
-        p = pathlib.Path(args.output)
-        p.write_text(md, encoding="utf-8")
-        print(f"Wrote Markdown to {p}")
-    else:
-        print(md)
-
-    return 0
 
 
 if __name__ == "__main__":
