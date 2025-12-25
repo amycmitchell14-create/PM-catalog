@@ -63,3 +63,12 @@ items:
     access: "paid"
     link: https://amycmitchell.substack.com/p/premium-pm-resources
     status: "current"
+  - id: faq
+    title: "Frequently Asked Questions"
+    description: "Answers to common questions about free content and Substack"
+    type: info
+    version: "1.0"
+    status: current
+    access: free
+    link: "faq.md"
+    tags: ["info", "faq"]

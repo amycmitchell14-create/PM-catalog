@@ -148,6 +148,24 @@ def main(argv: list[str] | None = None) -> int:
 
     return 0
 
+# adding FAQ and info
+for item in catalog:
+    lines.append(f"### 📄 {item['title']}")
+    lines.append(f"*{item['description']}*")
+    lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
+                 f"**Status:** {item['status']}, **Access:** {item['access']}")
+    if 'tags' in item:
+        lines.append(f"**Tags:** {', '.join(item['tags'])}")
+    if 'link' in item:
+        # If link points to faq.md, render as internal page link
+        if item['link'].endswith("faq.md"):
+            lines.append(f"🔗 [Read FAQ]({item['link']})")
+        else:
+            lines.append(f"📄 [Download PDF]({item['link']})")
+    if 'cta' in item and item['cta']:
+        lines.append(f"\n{item['cta']}")
+    lines.append("")  # blank line between entries
+
     # maintainer
     maint = data.get("maintainer")
     if maint:
