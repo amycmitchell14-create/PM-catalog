@@ -170,12 +170,6 @@ for item in data.get("items", []):
                  f"**Status:** {item['status']}, **Access:** {item['access']}")
     if 'tags' in item:
         lines.append(f"**Tags:** {', '.join(item['tags'])}")
-    if 'link' in item:
-        # If link points to faq.md, render as internal page link
-        if item['link'].endswith("faq.md"):
-            lines.append(f"🔗 [Read FAQ]({item['link']})")
-        else:
-            lines.append(f"📄 [Download PDF]({item['link']})")
     lines.append("")  # blank line between entries
 
 
