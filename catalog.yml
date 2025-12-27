@@ -74,6 +74,6 @@ items:
     version: "1.0"
     status: "current"
     access: "free"
-    link: 
+    link: "faq.md"
     tags: ["support", "faq"]
     version: "1.0"
