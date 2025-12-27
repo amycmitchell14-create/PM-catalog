@@ -135,10 +135,21 @@ def main(argv: list[str] | None = None) -> int:
         access_groups = {"free": "🟢 Free Content", "paid": "🔒 Paid Content"}
         type_groups = {"slide-deck": "🎤 Slide Decks", "learning-path": "📖 Learning Paths", "quick-start": "📝 Quick Starts", "info-type": "FAQ"}
 
+    # --- FAQ section before free items ---
+    faq_items = [i for i in items if i.get("type") == "info-type"]
+    if faq_items:
+     out_lines.append("\n## ❓ Frequently Asked Questions\n")
+     for item in faq_items:
+        out_lines.append(render_item_md(item))
         for access, access_label in access_groups.items():
             out_lines.append(f"\n## {access_label}\n")
             for t, t_label in type_groups.items():
-                section_items = [i for i in items if i.get("access") == access and i.get("type") == t]
+                section_items = [
+    i for i in items
+    if i.get("access") == access
+    and i.get("type") == t
+    and i.get("type") != "info-type"   # skip FAQ here
+]
                 if section_items:
                     out_lines.append(f"### {t_label}\n")
                     for item in section_items:
@@ -154,54 +165,6 @@ def main(argv: list[str] | None = None) -> int:
     index_path = pathlib.Path("index.md")
     index_path.write_text(md, encoding="utf-8")
     print(f"Wrote Markdown to {index_path}")
-
-import yaml
-
-with open("catalog.yml", "r", encoding="utf-8") as f:
-    catalog = yaml.safe_load(f)
-
-lines = []
-
-# adding FAQ and info
-for item in data.get("items", []):  
-    lines.append(f"### 📄 {item['title']}")
-    lines.append(f"*{item['description']}*")
-    lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
-                 f"**Status:** {item['status']}, **Access:** {item['access']}")
-    if 'tags' in item:
-        lines.append(f"**Tags:** {', '.join(item['tags'])}")
-    lines.append("")  # blank line between entries
-
-
-# maintainer
-
-maint = data.get("maintainer")
-if maint:
-        out_lines.append("")
-        mn = maint.get("name") or ""
-        me = maint.get("email")
-        if me:
-            out_lines.append(f"**Maintainer:** {mn} <{me}>")
-        else:
-            out_lines.append(f"**Maintainer:** {mn}")
-
-out_lines.append("")
-out_lines.append("## Items")
-out_lines.append("")
-
-items = data.get("items") or []
-if not items:
-    out_lines.append("*(no items found in catalog.yml)*")
-
-for item in items:
-    out_lines.append(render_item_md(item))
-    
-# finally write out to index.md
-md = "\n".join(out_lines)
-with open("index.md", "w", encoding="utf-8") as f:
-    f.write("\n".join(lines))
-
-
 
 
 if __name__ == "__main__":
