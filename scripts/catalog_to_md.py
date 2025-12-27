@@ -163,7 +163,7 @@ with open("catalog.yml", "r", encoding="utf-8") as f:
 lines = []
 
 # adding FAQ and info
-for item in catalog:
+for item in data.get("items", []):  
     lines.append(f"### 📄 {item['title']}")
     lines.append(f"*{item['description']}*")
     lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
