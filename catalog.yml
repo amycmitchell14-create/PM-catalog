@@ -70,7 +70,7 @@ items:
     file: "content/faq.md"
     patch: "content/faq.md"
     description: "Answers to common questions about free content and Substack"
-    type: info
+    type: info-type
     version: "1.0"
     status: "current"
     access: "free"

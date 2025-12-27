@@ -133,7 +133,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         # Group by access and type
         access_groups = {"free": "🟢 Free Content", "paid": "🔒 Paid Content"}
-        type_groups = {"slide-deck": "🎤 Slide Decks", "learning-path": "📖 Learning Paths", "quick-start": "📝 Quick Starts", "info": "FAQ"}
+        type_groups = {"slide-deck": "🎤 Slide Decks", "learning-path": "📖 Learning Paths", "quick-start": "📝 Quick Starts", "info-type": "FAQ"}
 
         for access, access_label in access_groups.items():
             out_lines.append(f"\n## {access_label}\n")
@@ -164,7 +164,7 @@ lines = []
 
 # adding FAQ and info
 for item in catalog:
-    lines.append(f"### 📄 {item['title']}")
+    lines.append(f"### 📄 {item["title"]}")
     lines.append(f"*{item['description']}*")
     lines.append(f"**Type:** {item['type']}, **Version:** {item['version']}, "
                  f"**Status:** {item['status']}, **Access:** {item['access']}")
