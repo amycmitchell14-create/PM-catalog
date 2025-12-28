@@ -4,6 +4,14 @@ Newsletter content catalog for PM resources. Subscribe on Substack for playbooks
 
 **Maintainer:** Amy <amycmitchell14@gmail.com>
 
+## ❓ Frequently Asked Questions
+
+- [Frequently Asked Questions](https://amycmitchell14-create.github.io/catalog-paid/content/faq.md)
+  *Answers to common questions about free content and Substack*
+  **Type:** info-type, **Version:** 1.0, **Status:** current, **Access:** free
+  **Tags:** support, faq
+  **File:** [faq.md](content/faq.md)
+
 ## 🟢 Free Content
 
 ### 📝 Quick Starts
@@ -23,13 +31,6 @@ Newsletter content catalog for PM resources. Subscribe on Substack for playbooks
   **Type:** quick-start, **Version:** 1.1, **Status:** current, **Access:** free
   **Tags:** PM steps, PM leadership
   **File:** [PM urgency checklist.pdf](content/PM urgency checklist.pdf)
-### FAQ
-
-- [Frequently Asked Questions](https://amycmitchell14-create.github.io/catalog-paid/content/faq.md)
-  *Answers to common questions about free content and Substack*
-  **Type:** info-type, **Version:** 1.0, **Status:** current, **Access:** free
-  **Tags:** support, faq
-  **File:** [faq.md](content/faq.md)
 
 ## 🔒 Paid Content
 
