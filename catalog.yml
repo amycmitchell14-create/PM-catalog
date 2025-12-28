@@ -66,14 +66,14 @@ items:
 
   - id: faq-pm 
     title: "Frequently Asked Questions"
-    filename: "faq.md"
-    file: "content/faq.md"
-    patch: "content/faq.md"
-    description: "Answers to common questions about free content and Substack"
+    filename: "not available"
+    file: "not available"
+    path: "not available"
+    description: "Answers to common questions about product management"
     type: info-type
     version: "1.0"
     status: "current"
     access: "free"
-    link: faq.md
+    link: https://amycmitchell.substack.com/p/faq-product-management
     tags: ["support", "faq"]
     version: "1.0"
