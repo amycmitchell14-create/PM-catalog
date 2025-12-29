@@ -14,7 +14,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** free
 - **Tags:** support, faq
-- **File:** [FAQ](content/faq.md)
+- **File:** [FAQ](https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/content/faq.md)
 
 ---
 
@@ -31,7 +31,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** free
 - **Tags:** resume, job search, PM career
-- **File:** [Product Manager Resume Checklist.pdf](content/Product%20Manager%20Resume%20Checklist.pdf)
+- **File:** [Product Manager Resume Checklist.pdf](https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/content/Product%20Manager%20Resume%20Checklist.pdf)
 
 ---
 
@@ -43,11 +43,11 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** free
 - **Tags:** PM steps, checklist, PM leadership
-- **File:** [Operational Sellability Checklist.pdf](content/Operational%20Sellability%20Checklist.pdf)
+- **File:** [Operational Sellability Checklist.pdf](https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/content/Operational%20Sellability%20Checklist.pdf)
 
 ---
 
-#### 📄 [PM Urgency Checklist](content/PM%20urgency%20checklist.pdf)
+#### 📄 [PM Urgency Checklist](https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/content/PM%20urgency%20checklist.pdf)
 *Steps to handle sudden priority shifts*
 
 - **Type:** quick-start
@@ -55,7 +55,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** free
 - **Tags:** PM steps, PM leadership
-- **File:** [PM urgency checklist.pdf](content/PM%20urgency%20checklist.pdf)
+- **File:** [PM urgency checklist.pdf](https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/content/PM%20urgency%20checklist.pdf)
 
 ---
 
