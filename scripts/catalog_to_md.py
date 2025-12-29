@@ -41,7 +41,7 @@ def render_item_md(item):
     if item.get("access") == "free":
         if item.get("file"):
             safe_path = str(item["file"]).replace(" ", "%20")
-            base_url = "https://amycmitchell14-create.github.io/catalog-paid/"
+            base_url = "https://amycmitchell14-create.github.io/PM-catalog/"
             link = base_url + safe_path
         lines.append(f"- [{title}]({link})")
     elif item.get("access") == "paid":
