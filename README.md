@@ -32,7 +32,6 @@ This catalog includes:
 - 📘 [View the full catalog](https://amycmitchell14-create.github.io/PM-catalog/)
 - ❓ [Read the FAQ](./faq.md)
 - 📰 [Subscribe on Substack](https://amycmitchell.substack.com/)
-- 📂 [Browse free content](./public/)
 
 ---
 

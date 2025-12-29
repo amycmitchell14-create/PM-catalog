@@ -1,7 +1,5 @@
 name: catalog
-description: "Newsletter content catalog for PM resources. Subscribe on Substack for playbooks and guides: https://amycmitchell.substack.com/"
-version: 1
-created: 2025-11-27
+description: "Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https://amycmitchell.substack.com/)""
 maintainer:
   name: "Amy"
   email: "amycmitchell14@gmail.com"
