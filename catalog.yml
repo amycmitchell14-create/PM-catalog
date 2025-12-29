@@ -20,6 +20,7 @@ items:
     version: "1.0"
     description: "Checklist to optimize your PM resume"
     tags: ["resume", "job search", "PM career"]
+    link: "content/Product Manager Resume Checklist.pdf"
     access: "free"
     status: "current"
 
@@ -27,13 +28,13 @@ items:
     title: "Operational Sellability Checklist"
     filename: "Operational Sellability Checklist.pdf"
     file: "content/Operational Sellability Checklist.pdf"
-    path: "content/Operational Sellability Checklist.pdf"
+    path: "content/"
     type: quick-start
     version: "1.0"
     description: "Launch finalization checklist to help sell your product"
     tags: ["PM steps", "checklist", "PM leadership"]
     access: "free"
-    link:    
+    link:    content/Operational Sellability Checklist.pdf
     status: "current"
     
   - id: pm-urgency-checklist
@@ -72,6 +73,6 @@ items:
     version: "1.0"
     status: "current"
     access: "free"
-    link: 
+    link: "content/faq.md"
     tags: ["support", "faq"]
     version: "1.0"
