@@ -23,7 +23,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ### 📝 Quick Starts
 
-#### 📄 [Product Manager Resume Checklist](content/Product Manager Resume Checklist.pdf)
+#### 📄 [Product Manager Resume Checklist](content/Product%20Manager%20Resume%20Checklist.pdf)
 *Checklist to optimize your PM resume*
 
 - **Type:** quick-start
@@ -35,7 +35,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
-#### 📄 [Operational Sellability Checklist](content/Operational Sellability Checklist.pdf)
+#### 📄 [Operational Sellability Checklist](content/Operational%20Sellability%20Checklist.pdf)
 *Launch finalization checklist to help sell your product*
 
 - **Type:** quick-start
@@ -47,7 +47,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
-#### 📄 [PM Urgency Checklist](None)
+#### 📄 [PM Urgency Checklist](content/PM%20urgency%20checklist.pdf)
 *Steps to handle sudden priority shifts*
 
 - **Type:** quick-start
@@ -64,7 +64,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ### 📖 Learning Paths
 
-#### 📄 [Standard Offer Learning Path](https://amycmitchell.substack.com/p/premium-pm-resources) 🔒
+#### 📄 [Standard Offer Learning Path](https%3A//amycmitchell.substack.com/p/premium-pm-resources) 🔒
 *Learning path to define and grow your offer*
 
 - **Type:** learning-path
