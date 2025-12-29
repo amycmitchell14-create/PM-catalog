@@ -66,7 +66,7 @@ items:
     title: "Frequently Asked Questions"
     filename: "FAQ"
     file: "content/faq.md"
-    path: content/faq.md
+    path: "content/faq.md"
     description: "Answers to common questions about product management"
     type: info-type
     version: "1.0"
