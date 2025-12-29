@@ -14,7 +14,7 @@ from urllib.parse import quote
 from urllib.parse import quote
 
 # CHANGE THIS to match your repo
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/"
+GITHUB_RAW_BASE = "https://github.com/amycmitchell14-create/PM-catalog"
 
 def render_item_md(item):
     title = item.get("title", "Untitled")
