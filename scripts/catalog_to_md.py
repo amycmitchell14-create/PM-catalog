@@ -26,30 +26,39 @@ def render_item_md(item):
     if file_path in ("not available", "paid subscribers only"):
         file_path = None
 
-    # --- SAFE LINK HANDLING ---
-    # External URLs should NOT be encoded
-    if raw_link and (raw_link.startswith("http://") or raw_link.startswith("https://")):
+    # Determine if link is external
+    is_external_link = bool(
+        raw_link and (raw_link.startswith("http://") or raw_link.startswith("https://"))
+    )
+
+    # External links should NOT be encoded
+    if is_external_link:
         safe_link = raw_link
     else:
+        # Local link value (e.g., "content/foo.pdf") if present
         safe_link = quote(raw_link) if raw_link else None
 
     # Encode file path for GitHub URLs
     safe_file = quote(file_path) if file_path else None
 
-    # --- TARGET LINK LOGIC ---
+    # --- TARGET LINK LOGIC FOR TITLE ---
     if item.get("access") == "paid":
         # Paid items ALWAYS use explicit external link
         target = safe_link or ""
     else:
         # Free items:
-        # 1. Use explicit link if present
-        # 2. Otherwise convert file path to GitHub Pages URL
-        if safe_link:
+        if is_external_link and safe_link:
+            # If user explicitly gave an external link, honor it
             target = safe_link
-        elif safe_file:
-            target = GITHUB_PAGES_BASE + safe_file
         else:
-            target = ""
+            # Otherwise, use GitHub Pages URL based on file path (preferred)
+            if safe_file:
+                target = GITHUB_PAGES_BASE + safe_file
+            elif safe_link:
+                # Fallback: if only a local link exists, treat it as a path on Pages
+                target = GITHUB_PAGES_BASE + safe_link
+            else:
+                target = ""
 
     lines = []
 
