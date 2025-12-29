@@ -72,6 +72,6 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** paid
 - **Tags:** learning path, offer definition, PM leadership
-#### 📄 [Standard Offer Learning Path](https%3A//amycmitchell.substack.com/p/premium-pm-resources) 🔒
+- **File:** *paid subscribers only*
 
 ---
