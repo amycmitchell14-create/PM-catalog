@@ -26,7 +26,8 @@ def render_item_md(item):
         safe_link = raw_link
     else:
         safe_link = quote(raw_link) if raw_link else None
-        safe_file = quote(file_path) if file_path else None
+
+    safe_file = quote(file_path) if file_path else None
 
     # Link selection logic
     if item.get("access") == "paid":
