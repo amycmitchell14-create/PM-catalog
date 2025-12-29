@@ -66,9 +66,9 @@ items:
 
   - id: faq-pm 
     title: "Frequently Asked Questions"
-    filename: "not available"
-    file: "not available"
-    path: "not available"
+    filename: https://amycmitchell.substack.com/p/faq-product-management
+    file: https://amycmitchell.substack.com/p/faq-product-management
+    path: https://amycmitchell.substack.com/p/faq-product-management
     description: "Answers to common questions about product management"
     type: info-type
     version: "1.0"
