@@ -11,10 +11,11 @@ import yaml
 
 from urllib.parse import quote
 
-from urllib.parse import quote
+# GitHub Pages base URL (public-facing)
+GITHUB_PAGES_BASE = "https://amycmitchell14-create.github.io/PM-catalog/"
 
-# CHANGE THIS to match your repo
-GITHUB_RAW_BASE = "https://github.com/amycmitchell14-create/PM-catalog"
+# GitHub raw file base URL (direct file download)
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/"
 
 def render_item_md(item):
     title = item.get("title", "Untitled")
@@ -32,7 +33,7 @@ def render_item_md(item):
     else:
         safe_link = quote(raw_link) if raw_link else None
 
-    # Encode file path for GitHub raw URL
+    # Encode file path for GitHub URLs
     safe_file = quote(file_path) if file_path else None
 
     # --- TARGET LINK LOGIC ---
@@ -42,11 +43,11 @@ def render_item_md(item):
     else:
         # Free items:
         # 1. Use explicit link if present
-        # 2. Otherwise convert file path to public GitHub raw URL
+        # 2. Otherwise convert file path to GitHub Pages URL
         if safe_link:
             target = safe_link
         elif safe_file:
-            target = GITHUB_RAW_BASE + safe_file
+            target = GITHUB_PAGES_BASE + safe_file
         else:
             target = ""
 
