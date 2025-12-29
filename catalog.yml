@@ -66,14 +66,14 @@ items:
 
   - id: faq-pm 
     title: "Frequently Asked Questions"
-    filename: https://amycmitchell.substack.com/p/faq-product-management
-    file: https://amycmitchell.substack.com/p/faq-product-management
-    path: https://amycmitchell.substack.com/p/faq-product-management
+    filename: "content/faq.md"
+    file: "content/faq.md"
+    path: "content/faq.md"
     description: "Answers to common questions about product management"
     type: info-type
     version: "1.0"
     status: "current"
     access: "free"
-    link: https://amycmitchell.substack.com/p/faq-product-management
+    link: "content/faq.md"
     tags: ["support", "faq"]
     version: "1.0"
