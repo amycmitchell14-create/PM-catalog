@@ -35,68 +35,58 @@ except Exception:  # pragma: no cover - helpful error if pyyaml isn't installed
 def render_item_md(item):
     title = item.get("title", "Untitled")
     link = item.get("link", "")
+    description = item.get("description", "")
+    access = item.get("access", "")
+    file_path = item.get("file") or item.get("filename") or None
+
+    # URL-encode spaces for GitHub Pages links
+    if file_path:
+        safe_file = file_path.replace(" ", "%20")
+    else:
+        safe_file = None
+
     lines = []
 
-    # Auto-generate GitHub Pages link for free items if file is present
-    if item.get("access") == "free":
-        if item.get("file"):
-            safe_path = str(item["file"]).replace(" ", "%20")
-            base_url = "https://amycmitchell14-create.github.io/PM-catalog/"
-            link = base_url + safe_path
-        lines.append(f"- [{title}]({link})")
-    elif item.get("access") == "paid":
-        lines.append(f"- [{title}]({link}) 🔒")
-    else:
-        lines.append(f"- {title}")
+    # H4 item title
+    lock = " 🔒" if access == "paid" else ""
+    lines.append(f"#### 📄 [{title}]({link}){lock}")
 
     # Description
-    if item.get("description"):
-        lines.append(f"  *{item['description']}*")
+    if description:
+        lines.append(f"*{description}*")
+        lines.append("")
 
-    # Metadata
+    # Metadata bullets
     meta = []
     if item.get("type"):
-        meta.append(f"**Type:** {item['type']}")
+        meta.append(f"- **Type:** {item['type']}")
     if item.get("version"):
-        meta.append(f"**Version:** {item['version']}")
+        meta.append(f"- **Version:** {item['version']}")
     if item.get("status"):
-        meta.append(f"**Status:** {item['status']}")
+        meta.append(f"- **Status:** {item['status']}")
     if item.get("access"):
-        meta.append(f"**Access:** {item['access']}")
+        meta.append(f"- **Access:** {item['access']}")
 
     if meta:
-        lines.append("  " + ", ".join(meta))
+        lines.extend(meta)
 
     # Tags
     tags = item.get("tags")
     if isinstance(tags, (list, tuple)) and tags:
-        tags_line = ", ".join(str(t) for t in tags)
-        lines.append(f"  **Tags:** {tags_line}")
+        tag_list = ", ".join(tags)
+        lines.append(f"- **Tags:** {tag_list}")
 
     # File reference
-    if item.get("file"):
-        filename = item.get("filename") or "Download"
-        lines.append(f"  **File:** [{filename}]({item['file']})")
+    if safe_file:
+        filename = item.get("filename") or safe_file.split("/")[-1]
+        lines.append(f"- **File:** [{filename}]({safe_file})")
+    elif access == "paid":
+        lines.append("- **File:** *paid subscribers only*")
+
+    # Divider
+    lines.append("\n---\n")
 
     return "\n".join(lines)
-
-    # tags
-    tags = item.get("tags")
-    if isinstance(tags, (list, tuple)) and tags:
-        lines.append("")
-        tags_line = ", ".join(str(t) for t in tags)
-        lines.append(f"**Tags:** {tags_line}")
-
-    # file/path link as clickable Markdown
-    paths = item.get("file") or item.get("path") or item.get("filename")
-    filename = item.get("filename") or "Download"
-    if paths:
-      lines.append("")
-      lines.append(f"**File:** [{filename}]({paths})")
-
-    lines.append("")
-    return "\n".join(lines)
-
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="catalog_to_md", description="Render catalog/catalog.yml to Markdown")
@@ -144,11 +134,11 @@ def main(argv: list[str] | None = None) -> int:
         for access, access_label in access_groups.items():
             out_lines.append(f"\n## {access_label}\n")
             for t, t_label in type_groups.items():
-                section_items = [
+               section_items = [
     i for i in items
     if i.get("access") == access
     and i.get("type") == t
-    and i.get("type") != "info-type"   # skip FAQ here
+    and i.get("type") != "info-type"
 ]
                 if section_items:
                     out_lines.append(f"### {t_label}\n")
