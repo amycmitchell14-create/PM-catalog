@@ -140,7 +140,7 @@ def main(argv: list[str] | None = None) -> int:
     and i.get("type") == t
     and i.get("type") != "info-type"
 ]
-                if section_items:
+            if section_items:
                     out_lines.append(f"### {t_label}\n")
                     for item in section_items:
                         out_lines.append(render_item_md(item))
