@@ -30,7 +30,7 @@ This catalog includes:
 ## 🔗 Quick Links
 
 - 📘 [View the full catalog](https://amycmitchell14-create.github.io/PM-catalog/)
-- ❓ [Read the FAQ](./faq.md)
+- ❓ [Read the FAQ](https://amycmitchell14-create.github.io/PM-catalog/content/faq.md)
 - 📰 [Subscribe on Substack](https://amycmitchell.substack.com/)
 
 ---
