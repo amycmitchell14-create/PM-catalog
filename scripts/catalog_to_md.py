@@ -11,6 +11,11 @@ import yaml
 
 from urllib.parse import quote
 
+from urllib.parse import quote
+
+# CHANGE THIS to match your repo
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/amycmitchell/PM-catalog/main/"
+
 def render_item_md(item):
     title = item.get("title", "Untitled")
     raw_link = item.get("link")
@@ -20,22 +25,30 @@ def render_item_md(item):
     if file_path in ("not available", "paid subscribers only"):
         file_path = None
 
-    # URL encode both
-    # Only encode if it's a local file path, not an external URL
+    # --- SAFE LINK HANDLING ---
+    # External URLs should NOT be encoded
     if raw_link and (raw_link.startswith("http://") or raw_link.startswith("https://")):
         safe_link = raw_link
     else:
         safe_link = quote(raw_link) if raw_link else None
 
+    # Encode file path for GitHub raw URL
     safe_file = quote(file_path) if file_path else None
 
-    # Link selection logic
+    # --- TARGET LINK LOGIC ---
     if item.get("access") == "paid":
-        # Paid items ALWAYS use explicit link
+        # Paid items ALWAYS use explicit external link
         target = safe_link or ""
     else:
-        # Free items: link → file → empty
-        target = safe_link or safe_file or ""
+        # Free items:
+        # 1. Use explicit link if present
+        # 2. Otherwise convert file path to public GitHub raw URL
+        if safe_link:
+            target = safe_link
+        elif safe_file:
+            target = GITHUB_RAW_BASE + safe_file
+        else:
+            target = ""
 
     lines = []
 
@@ -61,7 +74,8 @@ def render_item_md(item):
     # File reference
     if safe_file:
         filename = item.get("filename") or file_path.split("/")[-1]
-        lines.append(f"- **File:** [{filename}]({safe_file})")
+        public_file_url = GITHUB_RAW_BASE + safe_file
+        lines.append(f"- **File:** [{filename}]({public_file_url})")
     else:
         if item.get("access") == "paid":
             lines.append("- **File:** *paid subscribers only*")
