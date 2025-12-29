@@ -6,11 +6,11 @@ Newsletter content catalog for PM resources. Subscribe on Substack for playbooks
 
 ## ❓ Frequently Asked Questions
 
-- [Frequently Asked Questions](https://amycmitchell14-create.github.io/catalog-paid/https://amycmitchell.substack.com/p/faq-product-management)
+- [Frequently Asked Questions](https://amycmitchell14-create.github.io/catalog-paid/content/faq.md)
   *Answers to common questions about product management*
   **Type:** info-type, **Version:** 1.0, **Status:** current, **Access:** free
   **Tags:** support, faq
-  **File:** [https://amycmitchell.substack.com/p/faq-product-management](https://amycmitchell.substack.com/p/faq-product-management)
+  **File:** [content/faq.md](content/faq.md)
 
 ## 🟢 Free Content
 
