@@ -16,6 +16,7 @@ def render_item_md(item):
     raw_link = item.get("link")
     file_path = item.get("file") or item.get("filename")
 
+    # Ignore placeholder file paths
     if file_path in ("not available", "paid subscribers only"):
         file_path = None
 
@@ -23,12 +24,12 @@ def render_item_md(item):
     safe_link = quote(raw_link) if raw_link else None
     safe_file = quote(file_path) if file_path else None
 
-    # Logic:
-    # - Paid items ALWAYS use the explicit link
-    # - Free items use link if present, otherwise fall back to file
+    # Link selection logic
     if item.get("access") == "paid":
+        # Paid items ALWAYS use explicit link
         target = safe_link or ""
     else:
+        # Free items: link → file → empty
         target = safe_link or safe_file or ""
 
     lines = []
@@ -56,8 +57,9 @@ def render_item_md(item):
     if safe_file:
         filename = item.get("filename") or file_path.split("/")[-1]
         lines.append(f"- **File:** [{filename}]({safe_file})")
-    elif item.get("access") == "paid":
-        lines.append(f"#### 📄 [{title}]({target}){lock}")
+    else:
+        if item.get("access") == "paid":
+            lines.append("- **File:** *paid subscribers only*")
 
     lines.append("\n---\n")
     return "\n".join(lines)
