@@ -6,7 +6,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ## ❓ Frequently Asked Questions
 
-#### 📄 [Frequently Asked Questions](content/faq.md)
+#### 📄 [Frequently Asked Questions](https://amycmitchell14-create.github.io/PM-catalog/content/faq.md)
 *Answers to common questions about product management*
 
 - **Type:** info-type
@@ -23,7 +23,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ### 📝 Quick Starts
 
-#### 📄 [Product Manager Resume Checklist](content/Product%20Manager%20Resume%20Checklist.pdf)
+#### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
 *Checklist to optimize your PM resume*
 
 - **Type:** quick-start
@@ -35,7 +35,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
-#### 📄 [Operational Sellability Checklist](content/Operational%20Sellability%20Checklist.pdf)
+#### 📄 [Operational Sellability Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Operational%20Sellability%20Checklist.pdf)
 *Launch finalization checklist to help sell your product*
 
 - **Type:** quick-start
