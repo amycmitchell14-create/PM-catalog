@@ -64,9 +64,9 @@ items:
 
   - id: faq-pm 
     title: "Frequently Asked Questions"
-    filename: "content/faq.md"
-    file: "content/faq.md"
-    path: "content/faq.md"
+    filename: "FAQ"
+    file: "faq.md"
+    path: "faq.md"
     description: "Answers to common questions about product management"
     type: info-type
     version: "1.0"
