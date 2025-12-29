@@ -9,57 +9,49 @@ import pathlib
 import sys
 import yaml
 
+from urllib.parse import quote
 
 def render_item_md(item):
     title = item.get("title", "Untitled")
-    link = item.get("link", "")
-    description = item.get("description", "")
-    access = item.get("access", "")
-    file_path = item.get("file") or item.get("filename") or None
+    raw_link = item.get("link")
+    file_path = item.get("file") or item.get("filename")
 
-    # URL-encode spaces for GitHub Pages links
-    safe_file = file_path.replace(" ", "%20") if file_path else None
+    # URL encode both link and file paths
+    safe_link = quote(raw_link) if raw_link else None
+    safe_file = quote(file_path) if file_path else None
+
+    # Prefer explicit link, fall back to file
+    target = safe_link or safe_file or ""
 
     lines = []
 
-    # H4 item title
-    lock = " 🔒" if access == "paid" else ""
-    lines.append(f"#### 📄 [{title}]({link}){lock}")
+    lock = " 🔒" if item.get("access") == "paid" else ""
+    lines.append(f"#### 📄 [{title}]({target}){lock}")
 
     # Description
+    description = item.get("description")
     if description:
         lines.append(f"*{description}*")
         lines.append("")
 
-    # Metadata bullets
-    meta = []
-    if item.get("type"):
-        meta.append(f"- **Type:** {item['type']}")
-    if item.get("version"):
-        meta.append(f"- **Version:** {item['version']}")
-    if item.get("status"):
-        meta.append(f"- **Status:** {item['status']}")
-    if item.get("access"):
-        meta.append(f"- **Access:** {item['access']}")
-
-    lines.extend(meta)
+    # Metadata
+    for key in ("type", "version", "status", "access"):
+        if item.get(key):
+            lines.append(f"- **{key.capitalize()}:** {item[key]}")
 
     # Tags
     tags = item.get("tags")
-    if isinstance(tags, (list, tuple)) and tags:
-        tag_list = ", ".join(tags)
-        lines.append(f"- **Tags:** {tag_list}")
+    if tags:
+        lines.append(f"- **Tags:** {', '.join(tags)}")
 
     # File reference
     if safe_file:
-        filename = item.get("filename") or safe_file.split("/")[-1]
+        filename = item.get("filename") or file_path.split("/")[-1]
         lines.append(f"- **File:** [{filename}]({safe_file})")
-    elif access == "paid":
+    elif item.get("access") == "paid":
         lines.append("- **File:** *paid subscribers only*")
 
-    # Divider
     lines.append("\n---\n")
-
     return "\n".join(lines)
 
 
