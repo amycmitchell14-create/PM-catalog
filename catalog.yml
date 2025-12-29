@@ -46,7 +46,7 @@ items:
     description: "Steps to handle sudden priority shifts"
     tags: ["PM steps", "PM leadership"]
     access: "free"
-    link: https://drive.google.com/file/d/1yHAPBUZls1C-thOuwfKyKXdcrF2NTuKe/view?usp=sharing
+    link: 
     status: "current"
 
   - id: standard-offers-learning-path
@@ -72,6 +72,6 @@ items:
     version: "1.0"
     status: "current"
     access: "free"
-    link: "content/faq.md"
+    link: 
     tags: ["support", "faq"]
     version: "1.0"
