@@ -64,7 +64,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ### 📖 Learning Paths
 
-#### 📄 [Standard Offer Learning Path](https%3A//amycmitchell.substack.com/p/premium-pm-resources) 🔒
+#### 📄 [Standard Offer Learning Path](https://amycmitchell.substack.com/p/premium-pm-resources) 🔒
 *Learning path to define and grow your offer*
 
 - **Type:** learning-path
