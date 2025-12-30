@@ -50,10 +50,7 @@ This repo uses:
 
 ## 📜 License
 
-All free content is licensed under:
-
-**Creative Commons BY‑NC 4.0**  
-→ Free to use, not for commercial use.
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 
 ---
 
