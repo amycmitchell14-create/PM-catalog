@@ -1,4 +1,8 @@
 # 📘 PM Catalog: Playbooks, Templates & Learning Paths
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-brightgreen)
+![Last Updated](https://img.shields.io/github/last-commit/amycmitchell14-create/PM-catalog)
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
 
 Welcome to my public catalog — a curated library of free and premium resources for product managers.  
 This repo powers the site at:
@@ -34,7 +38,12 @@ This catalog includes:
 - 📰 [Subscribe on Substack](https://amycmitchell.substack.com/)
 
 ---
+## How to Use This Catalog
+This catalog contains free and paid product management resources, checklists, and learning paths.  
+Free items link directly to downloadable PDFs hosted on GitHub Pages.  
+Paid items link to premium content on Substack.
 
+---
 ## 🛠 How This Repo Works
 
 This repo uses:
@@ -68,3 +77,5 @@ Product Manager & Systems Thinker
 
 Your logo is attached to this repo and may be used for visual identity across GitHub Pages and Substack.  
 If you'd like help integrating it into your homepage or catalog header, I can walk you through the Markdown or CSS options.
+
+© 2025 Amy Mitchell. All rights reserved except where licensed under CC BY-NC 4.0.
