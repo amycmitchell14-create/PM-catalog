@@ -27,7 +27,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 *15 business topics and free product manager resources on business acumen*
 
 - **Type:** slide-deck
-- **Version:** 1.2
+- **Version:** 1.3
 - **Status:** current
 - **Access:** free
 - **Tags:** Business Fluency, PM leadership
