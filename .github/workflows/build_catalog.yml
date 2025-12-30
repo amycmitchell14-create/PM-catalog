@@ -1,12 +1,12 @@
 name: Build Catalog
 permissions:
   contents: write
+
 on:
   pull_request:
     branches:
       - main
   workflow_dispatch:
-
 
 jobs:
   build:
@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref }}   # <-- THIS IS THE FIX
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -30,10 +31,10 @@ jobs:
         run: python scripts/catalog_to_md.py
 
       - name: Commit and push index.md
+        if: github.event_name == 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.md
           git diff --cached --quiet || git commit -m "Auto-regenerate index.md"
           git push origin ${{ github.head_ref }}
-
