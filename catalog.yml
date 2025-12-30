@@ -76,3 +76,16 @@ items:
     link: "content/faq.md"
     tags: ["support", "faq"]
     version: "1.0"
+
+ - id: business-impact-free-resource
+    title: "Business Fluency for Product Managers"
+    filename: "business impact free resource for product managers.pdf"
+    file: "content/business impact free resource for product managers.pdf"
+    path: "content/business impact free resource for product managers.pdf"
+    type: slide-deck
+    version: "1.0"
+    description: "15 business topics and free product manager resources on business acumen"
+    tags: ["Business Fluency", "PM leadership"]
+    access: "free"
+    link: 
+    status: "current"
