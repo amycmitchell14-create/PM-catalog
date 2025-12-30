@@ -47,7 +47,7 @@ items:
     description: "Steps to handle sudden priority shifts"
     tags: ["PM steps", "PM leadership"]
     access: "free"
-    link: 
+    link: ""
     status: "current"
 
   - id: standard-offers-learning-path
@@ -75,7 +75,6 @@ items:
     access: "free"
     link: "content/faq.md"
     tags: ["support", "faq"]
-    version: "1.0"
 
   - id: business-impact-free-resource
     title: "Business Fluency for Product Managers"
@@ -87,5 +86,5 @@ items:
     description: "15 business topics and free product manager resources on business acumen"
     tags: ["Business Fluency", "PM leadership"]
     access: "free"
-    link: 
+    link: ""
     status: "current"
