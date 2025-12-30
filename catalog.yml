@@ -77,7 +77,7 @@ items:
     tags: ["support", "faq"]
     version: "1.0"
 
- - id: business-impact-free-resource
+  - id: business-impact-free-resource
     title: "Business Fluency for Product Managers"
     filename: "business impact free resource for product managers.pdf"
     file: "content/business impact free resource for product managers.pdf"
