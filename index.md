@@ -21,13 +21,27 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ## 🟢 Free Content
 
+### 🎤 Slide Decks
+
+#### 📄 [Business Fluency for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/business%20impact%20free%20resource%20for%20product%20managers.pdf)
+*15 business topics and free product manager resources on business acumen*
+
+- **Type:** slide-deck
+- **Version:** 1.2
+- **Status:** current
+- **Access:** free
+- **Tags:** Business Fluency, PM leadership
+- **File:** [business impact free resource for product managers.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/business%20impact%20free%20resource%20for%20product%20managers.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
 *Checklist to optimize your PM resume*
 
 - **Type:** quick-start
-- **Version:** 1.0
+- **Version:** 2.2
 - **Status:** current
 - **Access:** free
 - **Tags:** resume, job search, PM career
