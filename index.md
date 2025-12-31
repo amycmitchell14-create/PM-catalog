@@ -27,11 +27,23 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 *15 business topics and free product manager resources on business acumen*
 
 - **Type:** slide-deck
-- **Version:** 1.2
+- **Version:** 1.3
 - **Status:** current
 - **Access:** free
 - **Tags:** Business Fluency, PM leadership
 - **File:** [business impact free resource for product managers.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/business%20impact%20free%20resource%20for%20product%20managers.pdf)
+
+---
+
+#### 📄 [Partner Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/partner%20product%20long.pdf)
+*Guide to evaluating and managing partner products*
+
+- **Type:** slide-deck
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** partnerships, PM leadership
+- **File:** [partner product long.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/partner%20product%20long.pdf)
 
 ---
 
