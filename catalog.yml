@@ -88,3 +88,16 @@ items:
     access: "free"
     link: ""
     status: "current"
+
+  - id: partner-playbook
+    title: "Partner Playbook for Product Managers"
+    filename: "partner product long.pdf"
+    file: "content/partner product long.pdf"
+    path: "content/partner product long.pdf"
+    type: slide-deck
+    version: "1.0"
+    description: "Guide to evaluating and managing partner products"
+    tags: ["partnerships", "PM leadership"]
+    access: "free"
+    link: ""
+    status: "current"
