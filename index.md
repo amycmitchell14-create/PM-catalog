@@ -35,6 +35,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Partner Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/partner%20product%20long.pdf)
+*Guide to evaluating and managing partner products*
+
+- **Type:** slide-deck
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** partnerships, PM leadership
+- **File:** [partner product long.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/partner%20product%20long.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
