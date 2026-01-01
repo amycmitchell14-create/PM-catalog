@@ -47,6 +47,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Product Strategy Slide Deck](https://amycmitchell14-create.github.io/PM-catalog/content/prod%20strategy.pdf)
+*How to create a product strategy when you are stuck*
+
+- **Type:** slide-deck
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** product strategy, PM leadership
+- **File:** [prod strategy.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/prod%20strategy.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
