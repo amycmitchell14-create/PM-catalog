@@ -59,6 +59,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Complex Learning Presentation with Examples](https://amycmitchell14-create.github.io/PM-catalog/content/complex%20learning%20presentation%20with%20examples.pdf)
+*How to present complex technical material to stakeholders with examples*
+
+- **Type:** slide-deck
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** presentation skills, PM leadership
+- **File:** [complex learning presentation with examples.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/complex%20learning%20presentation%20with%20examples.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
