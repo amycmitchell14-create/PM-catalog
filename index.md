@@ -18,6 +18,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Product Management FAQ](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Management%20FAQ%20v1.pdf)
+*Answers to questions about product management with references to Product Management IRL*
+
+- **Type:** info-type
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** support, faq
+- **File:** [Product Management FAQ v1](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Product%20Management%20FAQ%20v1.pdf)
+
+---
+
 
 ## 🟢 Free Content
 
