@@ -109,6 +109,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [5 steps to customer conversations](https://amycmitchell14-create.github.io/PM-catalog/content/5%20steps%20to%20customer%20conversations%20v3.pdf)
+*A simple 5 step process to prepare for and conduct customer conversations*
+
+- **Type:** quick-start
+- **Version:** 3.0
+- **Status:** current
+- **Access:** free
+- **Tags:** customer conversations, PM skills
+- **File:** [5 steps to customer conversations v3.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/5%20steps%20to%20customer%20conversations%20v3.pdf)
+
+---
+
 
 ## 🔒 Paid Content
 
