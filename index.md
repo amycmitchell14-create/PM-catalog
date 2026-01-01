@@ -7,7 +7,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 ## ❓ Frequently Asked Questions
 
 #### 📄 [Frequently Asked Questions](https://amycmitchell14-create.github.io/PM-catalog/content/faq.md)
-*Answers to common questions about product management*
+*Answers to questions about this GitHub repository and newsletter*
 
 - **Type:** info-type
 - **Version:** 1.0
