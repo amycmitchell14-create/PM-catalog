@@ -127,3 +127,16 @@ items:
     access: "free"
     link: ""
     status: "current"
+
+  - id: customer-conversations
+    title: "5 steps to customer conversations"
+    filename: "5 steps to customer conversations v3.pdf"
+    file: "content/5 steps to customer conversations v3.pdf"
+    path: "content/5 steps to customer conversations v3.pdf"
+    type: quick-start
+    version: "3.0"
+    description: "A simple 5 step process to prepare for and conduct customer conversations"
+    tags: ["customer conversations", "PM skills"]
+    access: "free"
+    link: ""
+    status: "current"
