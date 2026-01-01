@@ -140,3 +140,16 @@ items:
     access: "free"
     link: ""
     status: "current"
+  
+  - id: PM-FAQ 
+    title: "Product Management FAQ"
+    filename: "Product Management FAQ v1"
+    file: "content/Product Management FAQ v1.pdf"
+    path: "content/Product Management FAQ v1.pdf"
+    description: "Answers to questions about product management with references to Product Management IRL"
+    type: info-type
+    version: "1.0"
+    status: "current"
+    access: "free"
+    link: "content/Product Management FAQ v1.pdf"
+    tags: ["support", "faq"]  
