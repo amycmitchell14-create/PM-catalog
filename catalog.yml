@@ -114,3 +114,16 @@ items:
     access: "free"
     link: ""
     status: "current"
+
+  - id: learning-presentation
+    title: "Complex Learning Presentation with Examples"
+    filename: "complex learning presentation with examples.pdf"
+    file: "content/complex learning presentation with examples.pdf"
+    path: "content/complex learning presentation with examples.pdf"
+    type: slide-deck
+    version: "1.0"
+    description: "How to present complex technical material to stakeholders with examples"
+    tags: ["presentation skills", "PM leadership"]
+    access: "free"
+    link: ""
+    status: "current"
