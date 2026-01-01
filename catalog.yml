@@ -68,7 +68,7 @@ items:
     filename: "FAQ"
     file: "content/faq.md"
     path: "content/faq.md"
-    description: "Answers to common questions about product management"
+    description: "Answers to questions about this GitHub repository and newsletter"
     type: info-type
     version: "1.0"
     status: "current"
