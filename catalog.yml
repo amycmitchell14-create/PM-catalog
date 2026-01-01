@@ -101,3 +101,16 @@ items:
     access: "free"
     link: ""
     status: "current"
+
+  - id: prod-strategy
+    title: "Product Strategy Slide Deck"
+    filename: "prod strategy.pdf"
+    file: "content/prod strategy.pdf"
+    path: "content/prod strategy.pdf"
+    type: slide-deck
+    version: "1.0"
+    description: "How to create a product strategy when you are stuck"
+    tags: ["product strategy", "PM leadership"] 
+    access: "free"
+    link: ""
+    status: "current"
