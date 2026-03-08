@@ -83,6 +83,20 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+### 📚 Playbooks
+
+#### 📄 [The Bright Spot Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/The%20Bright%20Spot%20Playbook.pdf)
+*Use this playbook when a new capability is being developed and you want to ensure it strengthens the Product Spine instead of becoming a bright spot.*
+
+- **Type:** playbook
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** playbook, Product Spine, Offer, PM leadership
+- **File:** [The Bright Spot Playbook.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/The%20Bright%20Spot%20Playbook.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
