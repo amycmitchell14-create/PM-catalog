@@ -149,6 +149,7 @@ def main(argv: list[str] | None = None) -> int:
 
     type_groups = {
         "slide-deck": "🎤 Slide Decks",
+        "playbook": "📚 Playbooks",
         "learning-path": "📖 Learning Paths",
         "quick-start": "📝 Quick Starts"
     }
