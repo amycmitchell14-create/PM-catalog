@@ -153,3 +153,18 @@ items:
     access: "free"
     link: "content/Product Management FAQ v1.pdf"
     tags: ["support", "faq"]  
+    
+  - id: bright-spot-playbook 
+    title: "The Bright Spot Playbook for Product Managers"
+    filename: "The Bright Spot Playbook.pdf"
+    file: "content/The Bright Spot Playbook.pdf" 
+    path: "content/The Bright Spot Playbook.pdf"
+    description: "Use this playbook when a new capability is being developed and you want to ensure it strengthens the Product Spine instead of becoming a bright spot."
+    type: playbook
+    version: "1.0" 
+    status: "current"
+    access: "free" 
+    link: "content/The Bright Spot Playbook.pdf"
+    tags: ["playbook", "Product Spine", "Offer","PM leadership"]
+    
+
