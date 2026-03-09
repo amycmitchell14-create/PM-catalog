@@ -97,7 +97,7 @@ items:
     type: playbook
     version: "1.0"
     description: "Guide to evaluating and managing partner products"
-    tags: ["partnerships", "PM leadership"]
+    tags: ["partnerships", "playbook", "PM leadership"]
     access: "free"
     link: ""
     status: "current"
