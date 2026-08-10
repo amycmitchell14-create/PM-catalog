@@ -47,18 +47,6 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
-#### 📄 [Partner Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/partner%20product%20long.pdf)
-*Guide to evaluating and managing partner products*
-
-- **Type:** slide-deck
-- **Version:** 1.0
-- **Status:** current
-- **Access:** free
-- **Tags:** partnerships, PM leadership
-- **File:** [partner product long.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/partner%20product%20long.pdf)
-
----
-
 #### 📄 [Product Strategy Slide Deck](https://amycmitchell14-create.github.io/PM-catalog/content/prod%20strategy.pdf)
 *How to create a product strategy when you are stuck*
 
@@ -84,6 +72,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 ---
 
 ### 📚 Playbooks
+
+#### 📄 [Partner Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/partner%20product%20long.pdf)
+*Guide to evaluating and managing partner products*
+
+- **Type:** playbook
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** partnerships, playbook, PM leadership
+- **File:** [partner product long.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/partner%20product%20long.pdf)
+
+---
 
 #### 📄 [The Bright Spot Playbook for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/The%20Bright%20Spot%20Playbook.pdf)
 *Use this playbook when a new capability is being developed and you want to ensure it strengthens the Product Spine instead of becoming a bright spot.*
@@ -144,6 +144,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Access:** free
 - **Tags:** customer conversations, PM skills
 - **File:** [5 steps to customer conversations v3.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/5%20steps%20to%20customer%20conversations%20v3.pdf)
+
+---
+
+#### 📄 [Patrick Neeman AI Product Readiness Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Patrick%20Neeman%27s%20AI%20Product%20Checklist.pdf)
+*Checklist to help product managers assess the readiness of AI products*
+
+- **Type:** quick-start
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** AI products, checklist, PM leadership
+- **File:** [Patrick Neeman's AI Product Checklist.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Patrick%20Neeman%27s%20AI%20Product%20Checklist.pdf)
 
 ---
 
