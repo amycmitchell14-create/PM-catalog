@@ -166,5 +166,19 @@ items:
     access: "free" 
     link: ""
     tags: ["playbook", "Product Spine", "Offer","PM leadership"]
+
+    -id: patrick-neeman-ai-checklist
+    title: "Patrick Neeman AI Product Readiness Checklist"
+    filename: "Patrick Neeman's AI Product Checklist.pdf"
+    file: "content/Patrick Neeman's AI Product Checklist.pdf"
+    path: "content/Patrick Neeman's AI Product Checklist.pdf"   
+    description: "Checklist to help product managers assess the readiness of AI products"
+    type: quick-start 
+    version: "1.0"
+    status: "current"   
+    access: "free"
+    link: ""
+    tags: ["AI products", "checklist", "PM leadership"] 
+    
     
 
