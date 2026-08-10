@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: ${{ github.head_ref }}   # <-- THIS IS THE FIX
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}   # <-- THIS IS THE FIX
 
       - name: Set up Python
         uses: actions/setup-python@v5
