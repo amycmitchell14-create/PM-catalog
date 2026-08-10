@@ -3,7 +3,7 @@ name: Generate and validate catalog
 on:
   pull_request:
     branches: [ main ]
-
+ 
 jobs:
   build:
     name: Validate & generate
