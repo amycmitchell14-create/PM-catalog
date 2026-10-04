@@ -182,7 +182,7 @@ items:
 
   - id: developer-guide-for-product-managers
     title: "Developer Guide for Product Managers"
-    filename: "Developer overview.pdf"
+    filename: "Developer Guide for Product Managers.pdf"
     file: "content/Developer Guide for Product Managers.pdf"
     path: "content/Developer Guide for Product Managers.pdf"
     description: "A guide for product managers to understand the developer perspective and improve collaboration."
