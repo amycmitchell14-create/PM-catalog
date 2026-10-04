@@ -180,5 +180,16 @@ items:
     link: ""
     tags: ["AI products", "checklist", "PM leadership"] 
 
-    
+   - id: developer-guide-for-product-managers
+    title: "Developer Guide for Product Managers"
+    filename: "Developer overview.pdf"
+    file: "content/Developer Guide for Product Managers.pdf"
+    path: "content/Developer Guide for Product Managers.pdf"
+    description: "A guide for product managers to understand the developer perspective and improve collaboration."
+    type: guide
+    version: "1.0"
+    status: "current"
+    access: "free"
+    link: ""
+    tags: ["developer guide", "PM skills"]
 
