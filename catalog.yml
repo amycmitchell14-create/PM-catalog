@@ -186,7 +186,7 @@ items:
     file: "content/Developer Guide for Product Managers.pdf"
     path: "content/Developer Guide for Product Managers.pdf"
     description: "A guide for product managers to understand the developer perspective and improve collaboration."
-    type: guide
+    type: playbook
     version: "1.0"
     status: "current"
     access: "free"
