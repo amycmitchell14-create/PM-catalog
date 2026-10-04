@@ -180,7 +180,7 @@ items:
     link: ""
     tags: ["AI products", "checklist", "PM leadership"] 
 
-   - id: developer-guide-for-product-managers
+  - id: developer-guide-for-product-managers
     title: "Developer Guide for Product Managers"
     filename: "Developer overview.pdf"
     file: "content/Developer Guide for Product Managers.pdf"
