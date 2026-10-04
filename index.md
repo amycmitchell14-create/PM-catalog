@@ -97,6 +97,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Developer Guide for Product Managers](https://amycmitchell14-create.github.io/PM-catalog/content/Developer%20Guide%20for%20Product%20Managers.pdf)
+*A guide for product managers to understand the developer perspective and improve collaboration.*
+
+- **Type:** playbook
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** developer guide, PM skills
+- **File:** [Developer overview.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Developer%20Guide%20for%20Product%20Managers.pdf)
+
+---
+
 ### 📝 Quick Starts
 
 #### 📄 [Product Manager Resume Checklist](https://amycmitchell14-create.github.io/PM-catalog/content/Product%20Manager%20Resume%20Checklist.pdf)
