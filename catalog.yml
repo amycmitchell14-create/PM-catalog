@@ -193,3 +193,15 @@ items:
     link: ""
     tags: ["playbook", "developer guide", "PM skills"]
 
+  - id: feature-walk-through-example
+    title: "Feature Walk Through Example"
+    filename: "Feature Walk Through Example.pdf"
+    file: "content/Feature Walk Through Example.pdf"
+    path: "content/Feature Walk Through Example.pdf"
+    description: "An example of how to walk through a feature with product managers to ensure understanding and alignment."
+    type: quick-start
+    version: "1.0"
+    status: "current"
+    access: "free"
+    link: ""
+    tags: ["quick-start", "feature walk-through", "PM skills"]
