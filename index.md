@@ -105,7 +105,7 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 - **Status:** current
 - **Access:** free
 - **Tags:** playbook, developer guide, PM skills
-- **File:** [Developer overview.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Developer%20Guide%20for%20Product%20Managers.pdf)
+- **File:** [Developer Guide for Product Managers.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Developer%20Guide%20for%20Product%20Managers.pdf)
 
 ---
 
