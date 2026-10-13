@@ -171,6 +171,18 @@ Newsletter content catalog for PM resources. 📰 [Subscribe on Substack](https:
 
 ---
 
+#### 📄 [Feature Walk Through Example](https://amycmitchell14-create.github.io/PM-catalog/content/Feature%20Walk%20Through%20Example.pdf)
+*An example of how to walk through a feature with product managers to ensure understanding and alignment.*
+
+- **Type:** quick-start
+- **Version:** 1.0
+- **Status:** current
+- **Access:** free
+- **Tags:** quick-start, feature walk-through, PM skills
+- **File:** [Feature Walk Through Example.pdf](https://raw.githubusercontent.com/amycmitchell14-create/PM-catalog/main/content/Feature%20Walk%20Through%20Example.pdf)
+
+---
+
 
 ## 🔒 Paid Content
 
